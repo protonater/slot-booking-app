@@ -1,0 +1,163 @@
+.App {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #2e3543;
+  text-align: left;
+  background-color: #fff;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+/* Header Section styling */
+.hero-section {
+  position: relative;
+  background: url("../images/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 400px;
+  color: #fff;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 10;
+}
+.hero-heading {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hero-heading .brand {
+  font-size: 4rem;
+}
+.hero-heading .brand .name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+.hero-heading .brand .text-highlight {
+  color: #004890;
+}
+.hero-summary .item {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.hero-summary .item:last-child {
+  border-right: none;
+}
+.hero-summary .summary-heading {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+.hero-summary .summary-desc {
+  color: rgba(255, 255, 255, 0.8);
+}
+.hero-summary .icon {
+  position: relative;
+  top: 2px;
+}
+.hero-mask {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.single-col-max {
+  max-width: 760px;
+}
+@media (max-width: 767.98px) {
+  .hero-heading-upper {
+    font-size: 1.25rem;
+  }
+}
+.hero-heading-upper {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+
+/* Navigator styling */
+#section-nav:hover {
+  cursor: pointer;
+}
+.section-nav-space-holder {
+  height: 64px;
+  position: relative;
+}
+.section-nav-wrapper {
+  background: white;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: #f5f5f5;
+}
+.section-nav-wrapper.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+.section-nav-wrapper a {
+  color: #2e3543;
+  text-decoration: none;
+}
+.section-nav-wrapper .section-nav {
+  justify-content: center;
+}
+.section-nav-wrapper .section-nav li {
+  margin-right: 0.5rem;
+  display: inline-block;
+  background: none;
+}
+.section-nav-wrapper .section-nav li:hover,
+.section-nav-wrapper .section-nav li:active {
+  background: none;
+}
+.section-nav-wrapper .section-nav li a {
+  color: #2e3543;
+  padding: inherit;
+  font-weight: 700;
+  padding: 1.25rem 1.5rem;
+}
+.section-nav-wrapper .section-nav li a.active {
+  color: #8b37ff;
+  background: none;
+  border-bottom: 3px solid #8b37ff;
+}
+.section-nav-wrapper .section-nav li a:hover {
+  color: #2e3543;
+}
+.section-nav-wrapper .section-nav li a:hover,
+.section-nav-wrapper .section-nav li a:active,
+.section-nav-wrapper .section-nav li a:focus {
+  background: none;
+}
+.section-nav-wrapper .section-nav li:last-child {
+  margin-right: 0;
+}
+
+/* Floating Button styling */
+.float-nav a:not([href]) {
+  color: #fff;
+  text-decoration: none;
+}
+.float-nav a:not([href]):hover {
+  background-color: #ffffff;
+  color: #004890;
+}
+.float-btn {
+  color: #fff;
+  background-color: #004890;
+}
+
+.float-btn:hover {
+  color: #004890;
+  background-color: #fff;
+}
